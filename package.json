@@ -1,0 +1,60 @@
+{
+    "name": "egg-qswift",
+    "version": "1.0.0",
+    "description": "qunar swift for egg",
+    "eggPlugin": {
+      "name": "qswift"
+    },
+    "keywords": [
+      "egg",
+      "eggPlugin",
+      "egg-plugin"
+    ],
+    "dependencies": {
+      "debug": "^3.0.1",
+      "fs-extra": "^6.0.1"
+    },
+    "devDependencies": {
+      "autod": "^2.8.0",
+      "autod-egg": "^1.0.0",
+      "egg": "^2.0.0",
+      "egg-bin": "^3.4.0",
+      "egg-ci": "^1.6.0",
+      "egg-mock": "^3.7.0",
+      "eslint": "^3.19.0",
+      "eslint-config-egg": "^4.2.0",
+      "supertest": "^3.0.0",
+      "webstorm-disable-index": "^1.2.0"
+    },
+    "engines": {
+      "node": ">=8.0.0"
+    },
+    "scripts": {
+      "test": "export DEBUG=qwatcher && npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+      "test-local": "egg-bin test",
+      "cov": "egg-bin cov",
+      "lint": "eslint .",
+      "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+      "pkgfiles": "egg-bin pkgfiles",
+      "autod": "autod"
+    },
+    "files": [
+      "config",
+      "lib",
+      "app"
+    ],
+    "ci": {
+      "version": "6, 8"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/xbf321/egg-qswfit.git"
+    },
+    "bugs": {
+      "url": "https://github.com/eggjs/egg/issues"
+    },
+    "homepage": "https://github.com/xbf321/egg-qswfit#readme",
+    "author": "xbf321",
+    "license": "MIT"
+  }
+  
