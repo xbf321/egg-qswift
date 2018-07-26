@@ -38,6 +38,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 上传图片
 
 ```js
+# 上传文件流，非 Node.js 中的流
 const requestStream = await ctx.getFileStream();
 const result = await ctx.qswift.put(requestStream);
 ```
@@ -52,6 +53,12 @@ const result = await ctx.qswift.put(requestStream);
 ```
 
 > 默认以文件 mimeType 作为 container
+
+上传指定路径的文件
+
+```js
+const result = await ctx.qswift.putByPath(filePath);
+```
 
 自定义 container
 
