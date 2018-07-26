@@ -1,6 +1,6 @@
 {
     "name": "egg-qswift",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "qunar swift for egg",
     "eggPlugin": {
       "name": "qswift"
